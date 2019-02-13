@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+    function loaddata() {
+        var tmp = new Array();
+        var tmp2 = new Array();
+        get = new Array();
+
+        var url = location.search;
+        if (url != '') {
+            tmp = (url.substr(1)).split('&');
+            for (var i = 0; i < tmp.length; i++) {
+                tmp2 = tmp[i].split('=');
+                get[tmp2[0]] = tmp2[1];
+            }
+        }
+
+        document.getElementById("name").innerHTML = 'Name: ' + get['name'];
+        document.getElementById("email").innerHTML = 'Email: ' + get['email'];
+        document.getElementById("message").innerHTML = 'Message: ' + get['message'];
+    }
+    </script>
+</head>
+
+<body onLoad='loaddata()'>
+    <span style="color: black;" name="name" id="name"></span>
+    <span style="color: black;" name="email" id="email"></span>
+    <span style="color: black;" name="message" id="message"></span>
+</body>
+
+</html>

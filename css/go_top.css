@@ -1,0 +1,25 @@
+.text-block {
+  width: 250px;
+  margin: 50px;
+}
+
+#go-top {
+  position: fixed; 
+  font-family: sans-serif;
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, .8);
+  bottom: 10%; 
+  right: 10px; 
+  cursor:pointer; 
+  display:none;
+  width: 60px;
+  height: 60px;
+  background: #F66080;
+  border-radius: 60px;
+}
+
+#go-top:hover {
+  text-decoration: none;
+}

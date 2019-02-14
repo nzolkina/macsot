@@ -297,25 +297,29 @@ h2.section-title {
 	padding-bottom: 200px;
 }
 .collapse-img .title_block {
-	width: 80%;
+	width: 600px;
 	height: auto;
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px dotted;
-	padding: 3vw 3vw;
-	margin-bottom: 0px;
+	padding: 30px 40px;
 }
 .collapse-img .title {
-	font-size: 4vw;
+	font-size: 30px;
 	text-transform: uppercase;
 	letter-spacing: 1vw;
 	font-weight: bold;
+	margin-bottom: 0px;
 }
 
 @media (max-width: 600px) {
   .collapse-img .title {
-    font-size: 7vw;
+    font-size: 5vw;
+  }
+  .collapse-img .title_block {
+  	width: 80%;
+  	padding: 3vw 3vw;
   }
 }
 .collapse-img p.lead {

@@ -1,0 +1,24 @@
+.text-block {
+  width: 250px;
+  margin: 50px;
+}
+
+#go-top {
+  position: fixed; 
+  font-family: sans-serif;
+  line-height: 45px;
+  text-align: center;
+  font-size: 30px;
+  bottom: 6%; 
+  left: 50px; 
+  cursor:pointer; 
+  display:none;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, .9) url(../images/top.png);
+  border-radius: 60px;
+}
+
+#go-top:hover {
+  text-decoration: none;
+}

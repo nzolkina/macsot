@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Syte</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxEaw7r9MceyLmIYS_KjUTwzf826qMucM"></script>
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/go_top.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/anchor.js"></script>
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome -->
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <!-- Style -->
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/go_top.css">
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<script type='text/javascript' src="js/readmore.min.js"></script>
+<script>
+    $(function() {
+$('.demo').readmore({
+moreLink: '<a href="#">Читать дальше..</a>',
+lessLink: '<a href="#">Скрыть</a>',
+collapsedHeight: 125,
+speed: 200,
+afterToggle: function(trigger, element, expanded) {
+if(! expanded) { // The "Close" link was clicked
+$('html, body').animate({scrollTop: $(element).offset().top}, {duration: 100});
+}
+}
+});
+});
+</script>
+
+<body>
+    <!-- START SECTION -->
+    <div class="hamburger" class="nav-menu">
+        <div class="circle"></div>
+        <input id="hamburger" class="hamburger" type="checkbox" />
+        <label class="hamburger" for="hamburger">
+            <i></i>
+            <text>
+                <close></close>
+                <open></open>
+            </text>
+        </label>
+        <section class="drawer-list">
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#request">Заявка</a></li>
+                <li><a href="#contacts">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                </ul>
+        </section>
+    </div>
+    <div class="upper-nav-bg"><p id="logo">ИП Чернушевич</p><p id="sub_logo">Ремонт и обслуживание домофонных систем г.Мозырь и г.Калинковичи</p></div>
+    <section class="menu" class="nav-menu">
+        <nav>
+            <div class="full-menu">
+                <ul>
+                    <li class="nav-item item-home"><a href="#home">Главная</a></li>
+                    <li class="nav-item item-services"><a href="#services">Услуги</a></li>
+                    <li class="nav-item item-request"><a href="#request">Заявка</a></li>
+                    <li class="nav-item item-about"><a href="#about">О нас</a></li>
+                    <li class="nav-item item-contacts"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- END SECTION -->
+    <!-- START SECTION -->
+    <div class="section-img"></div>
+    <!-- END SECTION -->
+    <!-- START SECTION -->
+    <section class="section approch-section" id="services">
+        <div class="section-label">
+            <h2>Предоставляемые услуги</h2>
+
+        </div>
+        <div class="approch-content">
+            <div class="approch-photo approch-photo_one"></div>
+            <div class="approch-text">
+                <section class="demo"><b>Установка домофонной трубки 50р.</b>
+                </section>
+                <br>
+            </div>
+        </div>
+        <div class="approch-content">
+            <div class="approch-photo approch-photo_two"></div>
+            <div class="approch-text">
+                <section class="demo"><b>Заключение договоров по обслуживанию домофонной системы</b>
+                </section>
+                <br>
+            </div>
+        </div>
+        <div class="approch-content">
+            <div class="approch-photo approch-photo_three"></div>
+            <div class="approch-text">
+                <section class="demo"><b>Ремонт домофонной трубки</b>
+                </section>
+                <br>
+            </div>
+        </div>
+        <div class="approch-content">
+            <div class="approch-photo approch-photo_four"></div>
+            <div class="approch-text">
+                <section class="demo"><b>Изготовление ключей от домофона 6р.(1 ключ) без учета доставки</b>
+            </section>
+            
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION -->
+    <!-- START SECTION -->
+    <section class="section form-section" id="request">
+        <form action="send.php" method="post">
+            <div class="gradient"></div>
+            <div class="sign_up-title">
+                <p>Онлайн заявка</p>
+            </div>
+            <input name="user_name" class="user-name" type="text" placeholder="Имя и Фамилия" required>
+            <input name="user_phone" class="user-phone" type="phone" placeholder="Номер телефона" required>
+            <input name="user_email" class="user-email" type="email" placeholder="Адрес электронной почты" required>
+            <textarea name="user_comment" class="user-comment" name="user-comment" cols="40" rows="3" placeholder="Оставьте заявку с указанием желаемого перечня услуг" required></textarea>
+            <input class="send-btn" type="submit" value="Отправить">
+            <input class="clear-btn" type="reset" value="Очистить">
+        </form>
+    </section>
+    <!-- END SECTION -->
+    <!-- START SECTION -->
+    <section class="section review-section" id="about">
+        <div class="section-label">
+            <h2>Почему клиенты выбирают нас?</h2>
+            <span><i>Лучшая цена и качественная работа</i></span>
+        </div>
+        <div class="review-content">
+        </div>
+    </section>
+    <!-- END SECTION -->
+    <!-- START SECTION -->
+    <section class="footer-section" id="contacts">
+        
+        <div class="footer-header">
+            <h4>По оставшимся вопросам и способам оплаты обращаться:</h4>
+         </div>
+         <div>
+            <ul>
+                <li><a href="tel:+375297321116"><span class="footer-telephone"></span>+375(29)-732-11-16</a></li>
+                <li><a href="https://tele.click/sergeimozyr"><span class="footer-telegram"></span>Telegram message</a></li>
+                <li><a href="viber://chat?number=+375295335780"><span class="footer-viber"></span>Viber message</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Copyright © 2020, Made with ❤ by Astriera</p>
+        </div>
+       
+    </section>
+    <!-- END SECTION -->
+</body>
+
+</html>

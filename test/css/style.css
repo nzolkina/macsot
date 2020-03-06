@@ -892,3 +892,7 @@ form {
 .schedule {
   width: 400px;
 }
+
+.schedule li {
+  display: block;
+}

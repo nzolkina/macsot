@@ -888,3 +888,7 @@ form {
   display:inline-block;
   vertical-align:bottom;
 }
+
+.schedule {
+  width: 400px;
+}

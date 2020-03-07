@@ -827,24 +827,18 @@ form {
 .footer-section {
     background-color: #313536;
     opacity: 0.9;
-    height: 270px;
-}
-
-.footer-section {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+    min-height: 270px;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-header {
-  margin-top: 5px;
-}
-
-.footer-section div {
-  margin: 15px;
+  padding-top: 5px;
+  width: 100%;
 }
 
 .footer-section h4 {
@@ -889,11 +883,26 @@ form {
   vertical-align:bottom;
 }
 
-.schedule {
-  width: 400px;
+.footer-container {
+  width: 80%;
+  display: inline-block;
 }
 
-.schedule li {
+.footer-contacts {
+  width: 300px;
+  margin: 5px;
+}
+
+.footer-schedule {
+  width: 300px;
+  margin: 5px;
+}
+
+.footer-schedule li {
   display: block;
   color: #fff;
+}
+
+.copyright {
+  width: 80%;
 }

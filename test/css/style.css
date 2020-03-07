@@ -92,6 +92,14 @@ h1,h2,h3,h4 .sign_up-title>p {
   color: #fff;
 }
 
+.upper-nav-bg a.logo-telephone {
+  padding-left: 15px;
+  text-decoration: none;
+  color: #fff;
+  font: normal 16px 'Arial', sans-serif;
+}
+
+
 .menu ul {
     display: -webkit-flex;
     display: flex;
@@ -837,12 +845,12 @@ form {
 }
 
 .footer-header {
-  padding-top: 5px;
+  padding-bottom: 5px;
   width: 100%;
 }
 
 .footer-section h4 {
-  margin: 30px 0 0 0;
+  margin: 25px 0 0 0;
   color: #fff;
 }
 
@@ -891,11 +899,13 @@ form {
 .footer-contacts {
   width: 300px;
   margin: 5px;
+  margin-bottom: 20px;
 }
 
 .footer-schedule {
-  width: 300px;
+  width: 250px;
   margin: 5px;
+  margin-bottom: 20px;
 }
 
 .footer-schedule li {

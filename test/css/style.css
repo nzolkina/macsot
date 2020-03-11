@@ -551,12 +551,8 @@ label.hamburger {
 
 /*| Section top |*/
 
-div.section-img {
-    background-image: url(../img/fon.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.section-img {
+    background-image: url(../img/fon.jpg);;
     color: #fff;
     -webkit-box-shadow: inset 0px -95px 61px -50px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px -95px 61px -50px rgba(0,0,0,0.75);
@@ -565,14 +561,14 @@ div.section-img {
     min-height: 500px;
 }
 
-@media (max-width: 768px) {
-  div.section-img {
-    background-size: auto 600px;
-    width: 100%;
-    height: 500px;
-    background-attachment: scroll;
-  }
-
+.section-img-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+.section-img-fixed {
+  background-attachment: fixed;
 }
 
 h1 {

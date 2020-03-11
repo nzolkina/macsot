@@ -571,6 +571,11 @@ label.hamburger {
   background-attachment: fixed;
 }
 
+@media (max-width: 768px) {
+    .section-img {
+    background-size: auto 600px;
+}
+
 h1 {
     font-size: 2.5em;
     color: #fff;

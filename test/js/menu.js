@@ -23,5 +23,10 @@
 var mob = device.match(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/);
         if (mob) {
             $(".section-img-cover").removeClass("section-img-fixed");
+
+            var bg_img = document.getElementById("bg_img");
+            var img = document.createElement("img");
+            img.src = "img/fon.jpg";
+            bg_img.appendChild(img);
         }
 })();

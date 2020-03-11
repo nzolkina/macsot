@@ -571,6 +571,12 @@ label.hamburger {
   background-attachment: fixed;
 }
 
+#bg_img img {
+  text-align: center;
+  width: auto;
+  height: 500px;
+}
+
 @media (max-width: 768px) {
     .section-img {
     background-size: auto 600px;

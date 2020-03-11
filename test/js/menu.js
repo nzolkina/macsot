@@ -18,4 +18,10 @@
     nodeMenu: nodeMenu,
     nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
   });
+
+  var device = navigator.userAgent.toLowerCase();
+var mob = device.match(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/);
+        if (mob) {
+            $(".section-img-cover").removeClass("section-img-fixed");
+        }
 })();

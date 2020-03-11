@@ -26,7 +26,7 @@ var mob = device.match(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera
 
             var bg_img = document.getElementById("bg_img");
             var img = document.createElement("img");
-            img.src = "img/fon.jpg";
+            img.src = "../img/fon.jpg";
             bg_img.appendChild(img);
         }
 })();

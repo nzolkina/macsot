@@ -566,6 +566,8 @@ label.hamburger {
   background-position: center center;
   background-size: cover;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .section-img-fixed {
   background-attachment: fixed;

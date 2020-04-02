@@ -23,7 +23,7 @@ $user_comment = trim($user_comment);
 if (mail("sergei_mozyr@tyt.by", "Заявка с сайта", "Фамилия и имя: ".$user_name.". Телефон: ".$user_phone. ". Почта отправителя: ".$user_email.". Сообщение: ".$user_comment))
  {     echo '<html>
     <head>
-        <meta http-equiv="refresh" content="5;url=https://testmozyr.000webhostapp.com/" />
+        <meta http-equiv="refresh" content="5;url=http://domofonmozyr.by/" />
     </head>
     <body>
         Спасибо за обратную связь. Мы свяжемся с Вами в ближайшее время. <br> Вы будете перенаправлены на главную страницу через 5 секунд.

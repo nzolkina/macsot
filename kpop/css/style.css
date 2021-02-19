@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #3b3b3b;
+}
+
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4 .sign_up-title>p {
+    font-family: 'Display', sans-serif;
+}
+
+@font-face {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Cabo';
+    src: url('../fonts/Cabo.otf');
+}
+
+@font-face {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Display';
+    src: url('../fonts/Display.ttf');
+}
+
+@font-face {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Play';
+    src: url('../fonts/Play.ttf');
+}
+
+
+#preloader {
+    display: block;position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    background: #363F48 url(http://hello-site.ru//main/images/preloads/spinning-circles.svg) center center no-repeat;background-size:70px;
+}
+
+/*| Sections flex |*/
+
+.section {
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #FFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-content {
+    width: 80%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/*| Section approch |*/
+
+.approch-section {
+    background-color: #eee;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 550px;
+}
+
+.section-label {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.approch-photo {
+    width: 270px;
+    height: 230px;
+    display: inline-block;
+}
+
+.approch-photo_one {
+    background: url(../img/intercom-handset.jpg) center;
+    background-size: auto 230px;
+}
+.approch-photo_two {
+    background: url(../img/get-contract.jpg) center;
+    background-size: auto 230px;
+}
+.approch-photo_three {
+    background: url(../img/repairs.jpg) center;
+    background-size: auto 230px;
+}
+.approch-photo_four {
+    background: url(../img/keys.jpg) center;
+    background-size: auto 230px;
+}
+
+.approch-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 270px;
+    height: 320px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.approch-text {
+    text-align: justify;
+    margin: 20px 20px 20px 20px;
+    width: 80%;
+    font-size: 16px;
+}
+
+
+/*| Section footer |*/
+
+
+.footer-section {
+    background-color: #313536;
+    opacity: 0.9;
+    min-height: 270px;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-header {
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.footer-section h4 {
+  margin: 25px 0 0 0;
+  color: #fff;
+}
+
+.footer-section p {
+  color: #fff;
+}
+
+.footer-section li {
+  margin: 5px;
+  display: inline-block;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-telephone {
+  background: url("../img/telephone.png") no-repeat; 
+  width: 30px; 
+  height: 30px; 
+  display:inline-block;
+  vertical-align:bottom;
+}
+
+.footer-telegram {
+  background: url("../img/telegram.png") no-repeat; 
+  width: 30px; 
+  height: 30px; 
+  display:inline-block;
+  vertical-align:bottom;
+}
+.footer-viber {
+  background: url("../img/viber.png") no-repeat; 
+  width: 30px; 
+  height: 30px; 
+  display:inline-block;
+  vertical-align:bottom;
+}
+
+.footer-container {
+  width: 80%;
+  display: inline-block;
+}
+
+.footer-contacts {
+  width: 300px;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.footer-schedule {
+  width: 250px;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.footer-schedule li {
+  color: #fff;
+}
+
+.copyright {
+  width: 80%;
+}

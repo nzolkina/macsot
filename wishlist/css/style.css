@@ -1,21 +1,19 @@
-html {
-  zoom: 0.5;
-}
-
 marquee {
-  font: normal small-caps 30px monospace;
+  font: normal small-caps 16px monospace;
 }
 
 body {
   margin-top: 50px;
-  font-size: 32px;
+  font-size: 16px;
   text-align: center;
+  background-color: #fff;
 }
 
 .body {
   margin-top: 10%;
   width: 80%;
-  max-width: 1800px;
+  max-width: 1000px;
+  min-width: 1000px;
   display: inline-block;  
 }
 
@@ -25,7 +23,7 @@ body {
 
 input,
 button {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 #elem {
@@ -69,7 +67,6 @@ td {
 
 #select-card {
   display: none;
-  zoom: 2;
 }
 
 ul {
@@ -178,7 +175,7 @@ p {
 }
 
 .cardName {
-  font: normal small-caps 30px monospace;
+  font: normal small-caps 16px monospace;
   margin-bottom: 30px;
   height: 40px;
   vertical-align: 40px;

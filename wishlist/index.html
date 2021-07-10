@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+<div class="body">
+	<p id="intro"></p>
+  
+    <!--Выбрать секцию-->
+    <select id="select-member">
+      <option value="">Select member</option>
+      <option value="1">Namjoon</option>
+      <option value="2">Jin</option>
+      <option value="3">Yoongi</option>
+      <option value="4">Hoesok</option>
+      <option value="5">Jimin</option>
+      <option value="6">Taehuyng</option>
+      <option value="7">Jungkook</option>
+    </select>
+    
+      <!--Выбрать секцию-->
+    <select id="select-card">
+      <option value="">Select wishlist</option>
+      <option value="1">Kor</option>
+      <option value="2">Jap</option>
+      <option value="3">Tour</option>
+    </select>
+
+    <!--Первая секция (kor)-->
+    <section id="section_kor" class="section">
+    <br><br>
+    <div id=settings>
+      <label for="opasityRange">Some text</label><input type="range" id="opasityRange" min="0" max="100" value="50" onchange="test(this.value)"/>
+      <label for="colorPicker">Some text</label><input type="color" name="colorPicker" id="colorPicker" title="Choose Color" />
+    </div>
+  
+      <!--Orul-->
+      <div class="cardSection">
+        <div id="card-1-1" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">orul</p>
+        </div>
+      </div>
+      
+      <!--Sla-->
+      <div class="cardSection">
+        <div id="card-1-2" class="card-sla" onclick="toggleClass(this, 'card-sla', 'card6')" ondblclick="toggleClass(this, 'card-sla', 'card7')" onmousedown="return false">
+        </div>
+        <div id="card-1-3" class="card-sla" onclick="toggleClass(this, 'card-sla', 'card6')" ondblclick="toggleClass(this, 'card-sla', 'card7')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">sla</p>
+        </div>
+      </div>
+      
+      <!--sla spesial-->
+      <div class="cardSection">
+        <div id="card-1-4" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">sla spesial</p>
+        </div>
+      </div>
+      
+      <!--dark & wild-->
+      <div class="cardSection">
+        <div id="card-1-5" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">dark&wild</p>
+        </div>
+      </div>
+      <div class="break"></div>
+      
+      <!--HYYH Pt.1-->
+      <div class="cardSection">
+        <div id="card-1-6" class="card-big" onclick="toggleClass(this, 'card-big', 'card4');" ondblclick="toggleClass(this, 'card-big', 'card5')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">hyyh pt.1</p>
+        </div>
+      </div>
+      
+      <!--HYYH Pt.2-->
+      <div class="cardSection">
+        <div id="card-1-7" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">hyyh pt.2</p>
+        </div>
+      </div>
+      
+      <!--YF-->
+      <div class="cardSection">
+        <div id="card-1-8" class="card-big" onclick="toggleClass(this, 'card-big', 'card4');" ondblclick="toggleClass(this, 'card-big', 'card5')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">young forever</p>
+        </div>
+      </div>
+      
+      <!--YF Dope-->
+      <div class="cardSection">
+        <div id="card-1-9" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">yf dope</p>
+        </div>
+      </div>
+      
+      <!--Wings-->
+      <div class="cardSection">
+        <div id="card-1-10" class="card-big" onclick="toggleClass(this, 'card-big', 'card4');" ondblclick="toggleClass(this, 'card-big', 'card5')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">wings</p>
+        </div>
+      </div>
+      
+      <!--YYNWA-->
+      <div class="cardSection">
+        <div id="card-1-11" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ynwa</p>
+        </div>
+      </div>
+      <div class="break"></div>
+      
+      <!--LY Her L ver.-->
+      <div class="cardSection">
+        <div id="card-1-12" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ly her l ver</p>
+        </div>
+      </div>
+      
+      <!--LY Her O ver.-->
+      <div class="cardSection">
+        <div id="card-1-13" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">test</p>
+        </div>
+      </div>
+      
+      <!--LY Her V ver.-->
+      <div class="cardSection">
+        <div id="card-1-14" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ly her o ver</p>
+        </div>
+      </div>
+      
+      <!--LY Her E ver.-->
+      <div class="cardSection">
+        <div id="card-1-15" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ly her e ver</p>
+        </div>
+      </div>
+      
+      <!--LY Tear Y ver.-->
+      <div class="cardSection">
+        <div id="card-1-16" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ly her y ver</p>
+        </div>
+      </div>
+      
+      <!--LY Tear O ver.-->
+      <div class="cardSection">
+        <div id="card-1-17" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ly tear o ver</p>
+        </div>
+      </div>
+      
+      <!--LY Tear U ver.-->
+      <div class="cardSection">
+        <div id="card-1-18" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ly tear u ver</p>
+        </div>
+      </div>
+      
+      <!--LY Tear R ver.-->
+      <div class="cardSection">
+        <div id="card-1-19" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ly tear r ver</p>
+        </div>
+      </div>
+      <div class="break"></div>
+      
+      
+      <!--LY Answer S ver.-->
+      <div class="cardSection">
+        <div id="card-1-20" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ly answer s ver</p>
+        </div>
+      </div>
+      
+      <!--LY Answer E ver.-->
+      <div class="cardSection">
+        <div id="card-1-21" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ly answer e ver</p>
+        </div>
+      </div>
+      
+      <!--LY Answer L ver.-->
+      <div class="cardSection">
+        <div id="card-1-22" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ly answer l ver</p>
+        </div>
+      </div>
+      
+      <!--LY Answer F ver.-->
+      <div class="cardSection">
+        <div id="card-1-23" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">ly answer f ver</p>
+        </div>
+      </div>
+      
+      <!--Persona 1 ver.-->
+      <div class="cardSection">
+        <div id="card-1-24" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">persona 1 ver</p>
+        </div>
+      </div>
+      
+      <!--Persona 2 ver.-->
+      <div class="cardSection">
+        <div id="card-1-25" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">persona 2 ver</p>
+        </div>
+      </div>
+      
+      <!--Persona 3 ver.-->
+      <div class="cardSection">
+        <div id="card-1-26" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">persona 3 ver</p>
+        </div>
+      </div>
+      
+      <!--Persona 4 ver.-->
+      <div class="cardSection">
+        <div id="card-1-27" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">persona 4 ver</p>
+        </div>
+      </div>
+      
+      <!--Mots7 1 ver.-->
+      <div class="cardSection">
+        <div id="card-1-28" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">mots7 1 ver</p>
+        </div>
+      </div>
+      
+      <!--Mots7 2 ver.-->
+      <div class="cardSection">
+        <div id="card-1-29" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">mots7 2 ver</p>
+        </div>
+      </div>
+      
+      <!--Mots7 3 ver.-->
+      <div class="cardSection">
+        <div id="card-1-30" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">mots7 3 ver</p>
+        </div>
+      </div>
+      
+      <!--Mots7 4 ver.-->
+      <div class="cardSection">
+        <div id="card-1-31" class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          <p class="cardText">mots7 4 ver</p>
+        </div>
+      </div>	
+    </section>
+    <!--Конец первой секции-->
+
+    <!--Вторая секция (jap)-->
+    <section id="section_jap" class="section">
+      <p class="soon">soon..</p>
+      <!--<div class="cardSection">
+        <div class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          test
+        </div>
+      </div>
+      
+      <div class="cardSection">
+        <div class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          test
+        </div>
+      </div>-->
+      
+    </section>
+    <!--Конец второй секции-->
+
+    <!--Третья секция (tour)-->
+    <section id="section_tour" class="section">
+	  <p class="soon">soon..</p>
+      <!--<div class="cardSection">
+        <div class="card" onclick="toggleClass(this, 'card', 'card2')" ondblclick="toggleClass(this, 'card', 'card3')" onmousedown="return false">
+        </div>
+        <div class="cardName">
+          test
+        </div>
+      </div>-->
+    </section>
+    <!--Конец третьей секции-->
+
+	</div> <!--End body div-->
+	
+  </body>
+  <script src="js/main.js"></script>
+
+</html>

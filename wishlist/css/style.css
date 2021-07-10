@@ -1,0 +1,195 @@
+html {
+  zoom: 0.5;
+}
+
+marquee {
+  font: normal small-caps 30px monospace;
+}
+
+body {
+  margin-top: 50px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.body {
+  margin-top: 10%;
+  width: 80%;
+  max-width: 1800px;
+  display: inline-block;  
+}
+
+#settings {
+  width: 100%;
+}
+
+input,
+button {
+  font-size: 24px;
+}
+
+#elem {
+  height: 60px;
+  width: 60px;
+  border: #333 2px solid;
+}
+
+td {
+  border: #333 2px solid;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+#section_kor,
+#section_jap,
+#section_tour {
+  display: none;
+}
+
+/*--------------
+ Карты фото
+---------------*/
+.break {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  vertical-align: 300px;
+}
+
+#select-member {
+  display: inline-block;
+  zoom: 2;
+}
+
+#select-card {
+  display: none;
+  zoom: 2;
+}
+
+ul {
+  display: block;
+  width: 100%;
+}
+
+.cardSection {
+  margin: 0 10px 50px 10px;
+  height: 300px;
+  vertical-align: 300px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  margin: 10px;
+  margin-top: 20px;
+  height: 258px;
+  width: 162px;
+  border: 6px solid #fff;
+  border-radius: 15px;
+}
+
+.card-big {
+  margin: 10px;
+  margin-top: 20px;
+  height: 258px;
+  width: 258px;
+  border: 6px solid #fff;
+  border-radius: 15px;
+}
+
+.card-sla {
+  margin: 10px;
+  margin-top: 20px;
+  height: 113px;
+  width: 258px;
+  border: 6px solid #fff;
+  border-radius: 15px;
+}
+
+.card2 {
+  margin: 10px;
+  margin-top: 20px;
+  height: 258px;
+  width: 162px;
+  border: 6px solid green;
+  border-radius: 15px;
+}
+
+.card3 {
+  opacity: 0.4;
+  margin: 10px;
+  margin-top: 20px;
+  height: 258px;
+  width: 162px;
+  border: 6px solid;
+  border-color: #fff;
+  border-radius: 15px;
+}
+
+.card4 {
+  margin: 10px;
+  margin-top: 20px;
+  height: 258px;
+  width: 258px;
+  border: 6px solid green;
+  border-radius: 15px;
+}
+
+.card5 {
+  opacity: 0.4;
+  margin: 10px;
+  margin-top: 20px;
+  height: 258px;
+  width: 258px;
+  border: 6px solid #fff;
+  border-radius: 15px;
+}
+
+.card6 {
+  margin: 10px;
+  margin-top: 20px;
+  height: 113px;
+  width: 258px;
+  border: 6px solid green;
+  border-radius: 15px;
+}
+
+.card7 {
+  opacity: 0.4;
+  margin: 10px;
+  margin-top: 20px;
+  height: 113px;
+  width: 258px;
+  border: 6px solid #fff;
+  border-radius: 15px;
+}
+
+p {
+  margin-top: 0px;
+}
+
+.cardName {
+  font: normal small-caps 30px monospace;
+  margin-bottom: 30px;
+  height: 40px;
+  vertical-align: 40px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fee5e5;
+}
+
+.cardText {
+    z-index: 999;
+    color: #0d0d0d;
+    opacity: 1;
+    
+}

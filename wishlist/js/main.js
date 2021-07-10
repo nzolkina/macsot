@@ -17,7 +17,7 @@ opasity.addEventListener('input', function() {
 })
 
 let k = 0;
-let intro_text = "Choose select first"
+let intro_text = "Choose your member"
 let speed_text = Math.random()*(80-30)+30;
 
 function typeWriter() {
